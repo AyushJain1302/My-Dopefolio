@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;600;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.form-box{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display:flex;
+    font-size: 25px;
+    font-weight: 800;
+    color: #3d533d;;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    position: relative;
+    bottom: .2em;
+    font-size: 70px;
+    color: blueviolet;
+}
+.navitems{
+    display: flex;
+}
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navitems li a{
+    font-size: 25px;
+    color:#3d533d;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navitems li:hover a,
+.links ion-icon:hover{
+    color: blueviolet;
+}
+.links ion-icon{
+    position: relative;
+    top: .5em;
+    font-size: 25px;
+    color:#3d533d;
+    margin: 20px 5px;
+}
+.wrapper{
+    display: flex;
+    /* display: flex; */
+    width: 120%;
+    height: calc(100vh - 80px);
+    justify-content:left;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,blueviolet,pink);
+    animation:object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 8%;
+    background: linear-gradient(45deg,blueviolet,pink);
+    animation:object1 6s linear infinite;
+}
+.wrapper::content{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    right: 35%;
+    top: 8%;
+    background: linear-gradient(45deg,blueviolet,pink);
+    animation:object1 6s linear infinite;
+}
+.cols{
+    width: 40%;
+}
+.cols0{
+    z-index: 15;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d533d;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: blueviolet;
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d533d;
+}
+.multiText{
+    color: blueviolet;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d533d;
+}
+.colen{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    background-color: #3d533d;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px black;
+}
+button:hover{
+    background-color: blueviolet;
+}
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .imgbox{
+    display: flex;
+    justify-content: right;
+  }
+  .imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(80% - 60px);
+    top: -500%;
+    right:50px;
+    transform: rotateY('180deg');
+    animation: animateUser 4s linear infinite;
+  }
+  @keyframes animateUser{
+    50%{
+        right: 20px;
+        top: -90px;
+    }
+  }
+  /*.imgbox #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+  }
+  @keyframes animate{
+    50%{
+        top:49%;
+        left: 51%;
+        width: 155%;
+    }
+  }
+  
+/* <-------------------------------------Media Query-------------------------------> */
+/* 
+@media screen and (max-width: 720px) {
+  
+
+    
+   }
+  } */
